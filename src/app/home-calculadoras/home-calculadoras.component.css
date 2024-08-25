@@ -1,0 +1,79 @@
+.crema-background {
+    background-color: #f5f5dc !important;
+}
+
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center; /* Asegura que el texto esté centrado horizontalmente */
+    font-size: 36px; /* Ajusta el tamaño de la fuente según tus necesidades */
+    margin-top: 0;
+}
+
+.tools-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.tool-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #4b3621;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #4b3621;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #49353595;
+}
+
+.tools-container {
+    margin-top: 50px; /* Separa los cuadros del navbar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.tools-container > div {
+    margin-bottom: 50px; /* Separa los cuadros entre sí y del FinalComponent */
+}
+  
+app-final {
+    margin-top: auto;
+    width: 100%; /* Asegura que el footer esté al final de la página */
+}

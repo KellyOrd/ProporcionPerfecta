@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>Calculadora de Panaderia</h1>
+  
+  <div class="form-group">
+    <label for="nombrePlatillo">Nombre de la Receta:</label>
+    <input type="text" id="nombrePlatillo" class="form-control" placeholder="Ej. Donas de remolacha y ganash de chocolate" [(ngModel)]="nombrePlatillo" [class.is-invalid]="!nombrePlatillo && touchedNombrePlatillo" (blur)="touchedNombrePlatillo = true">
+    <div *ngIf="!nombrePlatillo && touchedNombrePlatillo" class="error">Este campo es obligatorio</div>
+  </div>
+
+  <div class="form-group">
+    <label for="tipoElaboracion">Tipo de Elaboración:</label>
+    <input type="text" id="tipoElaboracion" class="form-control" placeholder="Ej. Pan, etc." [(ngModel)]="tipoElaboracion" required [class.is-invalid]="!tipoElaboracion && touchedTipoElaboracion" (blur)="touchedTipoElaboracion = true">
+    <div *ngIf="!tipoElaboracion && touchedTipoElaboracion" class="error">Este campo es obligatorio</div>
+  </div>
+  
+  <app-tabla-ingredientes-panaderia></app-tabla-ingredientes-panaderia>
+  
+  <div class="botones">
+    <button class="btn btn-primary" (click)="continuar()">Continuar</button>
+  </div>
+  
+  <app-calculadora-panaderia></app-calculadora-panaderia>
+</div>

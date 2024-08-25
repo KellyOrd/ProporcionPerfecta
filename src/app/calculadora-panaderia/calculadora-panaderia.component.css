@@ -1,0 +1,62 @@
+.calculadora-panaderia-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: auto;
+  border: 1px solid #ccc;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.calculadora-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Cambiado a una columna */
+  gap: 15px;
+}
+
+.calculadora-item {
+  display: flex;
+  flex-direction: column; /* Los elementos dentro del item ahora estarán en columna */
+  align-items: center; /* Centrará el contenido */
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  text-align: center; /* Centra el texto dentro de cada item */
+}
+
+label {
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  color: #555;
+  margin-bottom: 5px; /* Espacio entre el label y el input */
+}
+
+input {
+  width: 100%; /* Para que el input ocupe todo el ancho disponible */
+  max-width: 200px; /* Limitar el ancho máximo */
+  padding: 7px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: right;
+  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+input[readonly] {
+  background-color: #e9ecef;
+  color: #6c757d;
+}
+
+.calculadora-item:nth-child(even) {
+  background-color: #f0f0f0;
+}

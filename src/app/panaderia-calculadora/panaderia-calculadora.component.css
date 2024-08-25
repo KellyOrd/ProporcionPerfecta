@@ -1,0 +1,19 @@
+.botones {
+    margin-top: 10px;
+    margin-bottom: 20px; /* Separación de app-final-panaderia */
+    display: flex;
+    justify-content: center; /* Centrando el botón */
+}
+
+button {
+    padding: 15px 20px;
+    background-color: #4b3621; /* Café oscuro */
+    color: #fff;
+    border: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3b2d1b;
+}

@@ -1,0 +1,51 @@
+.container {
+    background-color: #f5f5dc; /* Color crema */
+    color: #4b3621; /* Café oscuro */
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    color: #4b3621; /* Café oscuro */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  input {
+    border: 1px solid #4b3621; /* Café oscuro */
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  input.is-invalid {
+    border-color: red;
+  }
+  
+  button {
+    background-color: #4b3621; /* Café oscuro */
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3e2d1a; /* Un poco más oscuro en hover */
+  }
+  
+  .botones {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px; /* Espacio debajo del botón */
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+  

@@ -1,0 +1,67 @@
+<footer class="footer">
+  <div class="footer-content">
+    <div class="logo-section">
+      <img src="./Proporcionperfecta.png" alt="Proporción Perfecta" class="logo">
+      <span class="site-name">Proporción Perfecta</span>
+    </div>
+    <div class="info-section">
+      <span>Chequeado · Copyright © 2024</span>
+      <br>
+      <a href="#" (click)="showPrivacyPolicy($event)">Política de confidencialidad -</a>
+      <a href="mailto:brawlbull458&#64;gmail.com"> Contacto</a>
+    </div>
+    <button (click)="openCredits()" class="credits-button">Créditos</button>
+  </div>
+
+  <!-- Modal de Política de Confidencialidad -->
+  <div *ngIf="showPrivacyPolicyModal" class="modal">
+    <div class="modal-content">
+      <span class="close" (click)="closePrivacyPolicy()">&times;</span>
+      <h2>Política de Privacidad de Proporción Perfecta</h2>
+      <p>Su privacidad es importante para nosotros
+
+          Proporción Perfecta se compromete a proteger su privacidad mientras utiliza nuestra página web para calcular masas panaderas. Esta política de privacidad explica cómo recopilamos, utilizamos y protegemos su información personal. Al utilizar nuestro servicio, usted acepta los términos de esta política.
+          
+          Información que recopilamos
+          
+          Cookies: Utilizamos cookies para mejorar su experiencia en nuestra página web. Las cookies son pequeños archivos de texto que se almacenan en su dispositivo y nos permiten recordar sus preferencias y personalizar el contenido que ve.
+          
+          Cómo utilizamos su información
+          
+          Para proporcionarle el servicio: Utilizamos su información para calcular las masas panaderas y proporcionarle los resultados.
+          Para mejorar nuestro servicio: Utilizamos la información de uso para analizar cómo se utiliza nuestra página web y realizar mejoras.
+          Para personalizar su experiencia: Podemos utilizar cookies para recordar sus preferencias y personalizar el contenido que ve en nuestra página web.
+          
+          Cómo protegemos su información
+          
+          Medidas de seguridad: Implementamos medidas de seguridad técnicas y organizativas para proteger su información personal contra el acceso no autorizado, la alteración, la divulgación o la destrucción.
+          Acceso limitado: Limitamos el acceso a su información personal a los empleados y contratistas que necesitan conocerla para proporcionar el servicio o realizar mejoras.
+          Retención de datos: Conservamos su información personal solo durante el tiempo necesario para cumplir con los fines descritos en esta política o según lo exija la ley.
+          
+          Compartir su información
+          
+          Terceros: No compartimos su información personal con terceros, excepto cuando sea necesario para proporcionar el servicio o cumplir con la ley.
+          Proveedores de servicios: Podemos compartir su información con proveedores de servicios de confianza que nos ayudan a operar nuestra página web y proporcionar el servicio. Estos proveedores están obligados por contrato a proteger su información y solo pueden utilizarla para los fines especificados por nosotros.
+          
+          Contáctenos
+          
+          Si tiene alguna pregunta sobre esta política de privacidad o sobre cómo manejamos su información personal.
+      Contáctenos a través de brawlbull458&#64;gmail.com</p>
+    </div>
+  </div>
+
+  <!-- Modal de Créditos -->
+  <div *ngIf="showCreditsModal" class="modal">
+    <div class="modal-content">
+      <span class="close" (click)="closeCredits()">&times;</span>
+      <h2>Créditos</h2>
+      <p>Desarrollo | Kelly Ordóñez.</p>
+      <p>Diseño | Kelly Ordóñez.</p>
+      <p>Creado con | Jordy Espinoza.</p>
+      <p>Líder del proyecto | Kelly Ordóñez.</p>
+      <p>Coordinación del producto | PixelGo.</p>
+      <p>Dirección ejecutiva | BrawlBull.</p>
+      <p>Contribuciones de | Jordy Espinoza.</p>
+    </div>
+  </div>
+</footer>

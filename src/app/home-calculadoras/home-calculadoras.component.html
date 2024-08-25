@@ -1,0 +1,20 @@
+<body class="crema-background">
+    <h1>Calculadoras</h1>
+    <div class="tools-container">
+      <div class="tool-card">
+          <h2>Calculadora de Cocina</h2>
+          <p>Realiza cálculos precisos para tus recetas de cocina.</p>
+          <button (click)="navigateTo('/cocina-calculadora')">Abrir</button>
+      </div>
+      <div class="tool-card">
+          <h2>Calculadora de Panadería</h2>
+          <p>Calcula ingredientes y costos para tus recetas de panadería.</p>
+          <button (click)="navigateTo('/panaderia-calculadora')">Abrir</button>
+      </div>
+    </div>
+    
+    </body>
+    
+    <!-- Aquí se renderiza el componente Final -->
+    <app-final-panaderia></app-final-panaderia>
+    

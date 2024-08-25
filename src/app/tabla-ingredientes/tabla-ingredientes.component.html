@@ -1,0 +1,46 @@
+<div class="tabla-ingredientes">
+    <table>
+      <thead>
+        <tr>
+          <th>Ingrediente</th>
+          <th>Peso</th>
+          <th>Unidad</th>
+          <th>Costo por Kilo Limpio</th>
+          <th>Costo de la Receta</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ingrediente of ingredientes; let i = index">
+          <td>
+            <input type="text" placeholder="Ej. Harina" [(ngModel)]="ingrediente.ingrediente" required>
+            <div *ngIf="!ingrediente.ingrediente" class="error">Campo obligatorio</div>
+          </td>
+          <td>
+            <input type="number" placeholder="0" [(ngModel)]="ingrediente.peso" min="0" step="0.01" (input)="calcularCostoReceta(i)" required>
+            <div *ngIf="ingrediente.peso <= 0" class="error">Debe ser mayor que 0</div>
+          </td>
+          <td>
+            <select [(ngModel)]="ingrediente.unidad" required>
+              <option value="kg">kg</option>
+              <option value="gr">gr</option>
+              <option value="lt">lt</option>
+              <option value="ml">ml</option>
+            </select>
+          </td>
+          <td>
+            <input type="number" placeholder="0" [(ngModel)]="ingrediente.costoKilo" min="0" step="0.01" (input)="calcularCostoReceta(i)" required>
+            <div *ngIf="ingrediente.costoKilo <= 0" class="error">Debe ser mayor que 0</div>
+          </td>
+          <td>
+            <input type="number" placeholder="0" readonly [(ngModel)]="ingrediente.costoReceta">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+    
+    <div class="botones">
+      <button (click)="agregarFila()">Añadir Ingrediente</button>
+      <button (click)="eliminarFila()">Eliminar Ingrediente</button>
+    </div>
+    
